@@ -1,9 +1,8 @@
 const routes = [
-  // Home - empty
+  // Landing page (public)
   {
     path: '/',
-    component: { template: '<router-view />' },
-    children: [{ path: '', component: { template: '<div />' } }],
+    component: () => import('pages/LandingPage.vue'),
   },
 
   // Privacy Policy page (public)
