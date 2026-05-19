@@ -41,7 +41,6 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
 import { useScrollReveal } from 'src/composables/useScrollReveal'
 
 useScrollReveal('.reveal')
