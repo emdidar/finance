@@ -103,7 +103,7 @@ const perks = [
     padding: 64px 48px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(47, 125, 92, 0.2);
-    border-radius: 28px;
+    border-radius: 10px;
     text-align: center;
     overflow: hidden;
 
@@ -177,7 +177,7 @@ const perks = [
     color: #fff;
     font-size: 1.05rem;
     font-weight: 700;
-    border-radius: 14px;
+    border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 4px 28px rgba(47, 125, 92, 0.45);
     transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
@@ -205,7 +205,7 @@ const perks = [
     color: rgba(255, 255, 255, 0.45);
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 14px;
+    border-radius: 8px;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: color 0.2s, border-color 0.2s, background 0.2s;

@@ -126,7 +126,7 @@ const rows = [
 
   &__table-wrap {
     overflow-x: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #e9e5dc;
     box-shadow: 0 2px 16px rgba(22, 22, 26, 0.05);
   }

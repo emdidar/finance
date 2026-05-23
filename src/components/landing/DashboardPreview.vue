@@ -264,7 +264,7 @@ const transactions = [
   align-items: flex-start;
   gap: 12px;
   padding: 16px;
-  border-radius: 14px;
+  border-radius: 8px;
   border: 1px solid #e9e5dc;
   background: #ffffff;
   cursor: default;
@@ -340,7 +340,7 @@ const transactions = [
   width: 90px;
   height: 22px;
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 0 0 14px 14px;
+  border-radius: 0 0 8px 8px;
   margin: 0 auto 4px;
 }
 
@@ -392,7 +392,7 @@ const transactions = [
 
 .sc-balance {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px;
   background: #16161a;
   border: 1px solid rgba(255, 255, 255, 0.08);

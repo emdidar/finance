@@ -181,7 +181,7 @@ const testimonials = [
   padding: 28px 24px;
   background: #ffffff;
   border: 1px solid #e9e5dc;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 
   &:hover {
@@ -242,7 +242,7 @@ const testimonials = [
   padding: 28px 48px;
   background: rgba(47, 125, 92, 0.06);
   border: 1px solid rgba(47, 125, 92, 0.15);
-  border-radius: 20px;
+  border-radius: 10px;
 
   &__stars {
     font-size: 1.4rem;

@@ -90,7 +90,7 @@ const stats = [
     padding: 28px 20px;
     background: #ffffff;
     border: 1px solid #e9e5dc;
-    border-radius: 16px;
+    border-radius: 10px;
     transition: box-shadow 0.25s, border-color 0.25s;
 
     &:hover {

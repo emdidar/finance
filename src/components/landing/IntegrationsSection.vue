@@ -112,7 +112,7 @@ const integrations = [
     padding: 14px 20px;
     background: rgba(42, 102, 149, 0.05);
     border: 1px solid rgba(42, 102, 149, 0.15);
-    border-radius: 12px;
+    border-radius: 8px;
     font-size: 0.85rem;
     color: #7c7a73;
     line-height: 1.5;
@@ -131,7 +131,7 @@ const integrations = [
   padding: 20px 16px;
   background: #ffffff;
   border: 1px solid #e9e5dc;
-  border-radius: 16px;
+  border-radius: 10px;
   text-align: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 
@@ -144,7 +144,7 @@ const integrations = [
   &__icon {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;

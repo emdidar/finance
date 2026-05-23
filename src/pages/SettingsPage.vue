@@ -288,7 +288,7 @@
 
     <!-- User Profile Modal -->
     <q-dialog v-model="showUserProfileModal" persistent>
-      <q-card style="min-width: 350px; border-radius: 16px; max-width: 90vw">
+      <q-card style="min-width: 350px; border-radius: 10px; max-width: 90vw">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6 text-weight-bold">{{ $t('settings.manageProfile') }}</div>
           <q-space />
@@ -342,7 +342,7 @@
 
     <!-- Set PIN Dialog -->
     <q-dialog v-model="showPinDialog">
-      <q-card style="min-width: 300px; border-radius: 16px">
+      <q-card style="min-width: 300px; border-radius: 10px">
         <q-card-section>
           <div class="text-h6 text-weight-bold">{{ $t('settings.setPin') }}</div>
         </q-card-section>
@@ -359,7 +359,7 @@
 
     <!-- Change PIN Dialog -->
     <q-dialog v-model="showChangePinDialog">
-      <q-card style="min-width: 300px; border-radius: 16px">
+      <q-card style="min-width: 300px; border-radius: 10px">
         <q-card-section>
           <div class="text-h6 text-weight-bold">{{ $t('settings.change') }} PIN</div>
         </q-card-section>
@@ -378,7 +378,7 @@
 
     <!-- Remove PIN Dialog -->
     <q-dialog v-model="showRemovePinDialog">
-      <q-card style="min-width: 300px; border-radius: 16px">
+      <q-card style="min-width: 300px; border-radius: 10px">
         <q-card-section>
           <div class="text-h6 text-weight-bold">{{ $t('settings.removePin') }}</div>
           <div class="text-caption text-grey q-mt-xs">{{ $t('settings.removePinConfirm') }}</div>
@@ -396,7 +396,7 @@
 
     <!-- Change Password Dialog -->
     <q-dialog v-model="showChangePasswordDialog" persistent>
-      <q-card style="min-width: 350px; border-radius: 16px">
+      <q-card style="min-width: 350px; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6 text-weight-bold">{{ $t('settings.changePassword') }}</div>
           <q-space />
@@ -436,7 +436,7 @@
 
     <!-- Reset Database Confirmation Dialog -->
     <q-dialog v-model="showResetDbDialog" persistent>
-      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 16px">
+      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <q-icon name="warning" color="negative" size="28px" class="q-mr-sm" />
           <div class="text-h6 text-weight-bold">{{ $t('settings.resetDatabaseTitle') }}</div>
@@ -458,7 +458,7 @@
 
     <!-- Export Dialog -->
     <q-dialog v-model="showExportDialog" persistent>
-      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 16px">
+      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6 text-weight-bold">{{ $t('settings.exportFormat') }}</div>
           <q-space />
@@ -496,7 +496,7 @@
 
     <!-- Restore Dialog: file picker -->
     <q-dialog v-model="showRestoreDialog" persistent>
-      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 16px">
+      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6 text-weight-bold">{{ $t('settings.restoreTitle') }}</div>
           <q-space />
@@ -534,7 +534,7 @@
 
     <!-- Restore Confirm Dialog -->
     <q-dialog v-model="showRestoreConfirmDialog" persistent>
-      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 16px">
+      <q-card style="min-width: 320px; max-width: 90vw; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <q-icon name="warning" color="warning" size="28px" class="q-mr-sm" />
           <div class="text-h6 text-weight-bold">{{ $t('settings.restoreConfirmTitle') }}</div>
@@ -570,7 +570,7 @@
 
     <!-- Dashboard Emojis Dialog -->
     <q-dialog v-model="showEmojisDialog" persistent>
-      <q-card style="min-width: 350px; border-radius: 16px">
+      <q-card style="min-width: 350px; border-radius: 10px">
         <q-card-section class="row items-center q-pb-none">
           <div class="text-h6 text-weight-bold">{{ $t('settings.dashboardEmojis') }}</div>
           <q-space />

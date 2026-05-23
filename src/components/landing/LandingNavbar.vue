@@ -158,7 +158,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     color: #fff;
     font-size: 0.875rem;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
     transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 12px rgba(22, 22, 26, 0.25);
@@ -233,7 +233,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
     color: #fff;
     font-size: 0.95rem;
     font-weight: 700;
-    border-radius: 12px;
+    border-radius: 8px;
     text-decoration: none;
     text-align: center;
   }

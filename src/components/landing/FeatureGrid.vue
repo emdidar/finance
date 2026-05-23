@@ -177,7 +177,7 @@ const features = [
   padding: 28px 24px;
   background: #ffffff;
   border: 1px solid #e9e5dc;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: default;
 
@@ -200,7 +200,7 @@ const features = [
   &__icon {
     width: 48px;
     height: 48px;
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -28,7 +28,7 @@
 
           <!-- Desktop Dropdown Menu -->
           <q-menu v-if="$q.screen.gt.xs" anchor="bottom right" self="top right" :offset="[0, 8]"
-            style="border-radius: 16px; min-width: 260px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.15); max-height: calc(100vh - 80px); display: flex; flex-direction: column;">
+            style="border-radius: 10px; min-width: 260px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.15); max-height: calc(100vh - 80px); display: flex; flex-direction: column;">
             <div class="profile-menu-header">
               <div class="row items-center no-wrap" style="gap: 12px;">
                 <q-avatar size="48px" style="border: 2px solid rgba(255,255,255,0.25); flex-shrink: 0;">
@@ -164,7 +164,7 @@
               </div>
 
               <div class="panel-group-label q-mt-md">Preferences</div>
-              <q-list style="border-radius: 14px; overflow: hidden; background: white; border: 1px solid #e9e5dc;">
+              <q-list style="border-radius: 8px; overflow: hidden; background: white; border: 1px solid #e9e5dc;">
                 <q-item clickable v-ripple @click="profileMenuNav('/dashboard/categories')" style="min-height: 52px;">
                   <q-item-section avatar><div class="panel-list-icon" style="background:rgba(22,22,26,0.06)"><q-icon name="category" size="18px" style="color:#16161a" /></div></q-item-section>
                   <q-item-section class="text-weight-medium" style="font-size: 0.9rem;">{{ $t('nav.categories') }}</q-item-section>
@@ -652,7 +652,7 @@ async function onLogout() {
   gap: 8px;
   padding: 14px 8px;
   background: white;
-  border-radius: 16px;
+  border-radius: 10px;
   border: 1px solid #e9e5dc;
   cursor: pointer;
   font-size: 0.78rem;
@@ -673,7 +673,7 @@ async function onLogout() {
 .panel-nav-icon {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -682,7 +682,7 @@ async function onLogout() {
 .panel-list-icon {
   width: 34px;
   height: 34px;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -691,7 +691,7 @@ async function onLogout() {
 .profile-logout-btn {
   background: transparent;
   color: #b14437;
-  border-radius: 14px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 14px;
@@ -704,7 +704,7 @@ async function onLogout() {
 
 /* ===== Sidebar nav item overrides ===== */
 .sidebar-nav-item {
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   margin: 1px 8px !important;
   min-height: 42px !important;
   color: rgba(255, 255, 255, 0.48) !important;
@@ -723,7 +723,7 @@ async function onLogout() {
 
 /* ===== Quick Add Dialog ===== */
 .quick-add-dialog {
-  border-radius: 24px !important;
+  border-radius: 10px !important;
   width: 100%;
   max-width: 480px;
   padding: 8px 12px 24px;
@@ -751,7 +751,7 @@ async function onLogout() {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 18px 8px 16px;
   height: 106px;
   border: 1px solid #e9e5dc;
@@ -773,7 +773,7 @@ async function onLogout() {
 .quick-add-icon-wrap {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;

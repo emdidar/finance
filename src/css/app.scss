@@ -27,11 +27,11 @@
   --expense-color: #b14437;
   --expense-bg: #fbeae6;
   --transfer-color: #2a6695;
-  --radius-sm: 10px;
-  --radius-md: 14px;
-  --radius-lg: 18px;
-  --radius-xl: 22px;
-  --radius-2xl: 26px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 10px;
+  --radius-2xl: 10px;
   --font-sans: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-bn: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -273,7 +273,7 @@ body {
 
 // ---------- Tab card ----------
 .tab-card {
-  border-radius: 14px !important;
+  border-radius: 8px !important;
   overflow: hidden;
 }
 
@@ -325,7 +325,7 @@ body {
 
 // ---------- Rounded inputs ----------
 .q-field--outlined .q-field__control {
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 // ---------- Large touch targets ----------

@@ -7,7 +7,7 @@
         <div class="page-subtitle">{{ loanStore.loans.length }}{{ $t('loans.countSuffix') }}</div>
       </div>
       <q-btn round flat dense icon="add_circle" size="md"
-        style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 14px;" @click="openAddDialog" />
+        style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 8px;" @click="openAddDialog" />
     </div>
 
     <!-- Summary Cards -->
@@ -247,7 +247,7 @@
 
     <!-- Add Loan Dialog -->
     <q-dialog v-model="showAddDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ addForm.type === 'receivable' ? $t('loans.newReceivable') : addForm.type === 'payable' ? $t('loans.newPayable') : $t('loans.newLoanEntry') }}
@@ -308,7 +308,7 @@
 
             <!-- Calculated Preview (loan only) -->
             <div v-if="addForm.type === 'loan' && addForm.amount > 0 && addForm.interestRate >= 0 && addForm.installmentCount > 0"
-              class="q-mb-md" style="background: var(--card-cream); border-radius: 12px; padding: 12px;">
+              class="q-mb-md" style="background: var(--card-cream); border-radius: 8px; padding: 12px;">
               <div class="text-caption text-grey-7 q-mb-xs">{{ $t('loans.loanSummary') }}</div>
               <div class="row q-col-gutter-xs">
                 <div class="col-6">
@@ -339,7 +339,7 @@
 
     <!-- Edit Loan Dialog -->
     <q-dialog v-model="showEditDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ $t('loans.editLoan') }}
@@ -382,7 +382,7 @@
 
     <!-- Payment Dialog -->
     <q-dialog v-model="showPaymentDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ payingLoan?.type === 'receivable' ? $t('loans.receivePayment') : $t('loans.makePayment') }}
@@ -391,7 +391,7 @@
         </q-card-section>
         <q-card-section>
           <!-- Loan Info -->
-          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 12px; padding: 12px;">
+          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 8px; padding: 12px;">
             <div class="row items-center justify-between">
               <div>
                 <div class="text-subtitle2 text-weight-bold">{{ payingLoan?.personName }}</div>
@@ -625,7 +625,7 @@
 
     <!-- Edit Payment Dialog -->
     <q-dialog v-model="showEditPaymentDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ $t('loans.editPayment') }}
@@ -664,7 +664,7 @@
 
     <!-- Delete Payment Confirm Dialog -->
     <q-dialog v-model="showDeletePaymentDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 420px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 420px; background: white;">
         <q-card-section>
           <div class="text-h6 text-weight-bold q-mb-sm">{{ $t('loans.deletePaymentTitle') }}</div>
           <div class="text-body2 text-grey-8 q-mb-md">
@@ -685,7 +685,7 @@
 
     <!-- Already Paid Dialog (no transaction) -->
     <q-dialog v-model="showAlreadyPaidDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ $t('loans.alreadyPaidTitle') }}
@@ -693,7 +693,7 @@
           <q-btn icon="close" flat round dense v-close-popup style="background: var(--card-cream); color: var(--text-muted);" />
         </q-card-section>
         <q-card-section>
-          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 12px; padding: 12px;">
+          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 8px; padding: 12px;">
             <div class="text-subtitle2 text-weight-bold">
               {{ $t('loans.installment') }} #{{ alreadyPaidInstallment?.number }}
             </div>
@@ -722,7 +722,7 @@
 
     <!-- Confirm Installment Dialog -->
     <q-dialog v-model="showConfirmInstallmentDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ $t('loans.confirmInstallment') }}
@@ -730,7 +730,7 @@
           <q-btn icon="close" flat round dense v-close-popup style="background: var(--card-cream); color: var(--text-muted);" />
         </q-card-section>
         <q-card-section>
-          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 12px; padding: 12px;">
+          <div class="q-mb-md" style="background: var(--card-cream); border-radius: 8px; padding: 12px;">
             <div class="text-subtitle2 text-weight-bold">
               {{ $t('loans.installment') }} #{{ confirmingInstallment?.number }}
             </div>

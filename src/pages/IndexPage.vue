@@ -305,7 +305,7 @@
 
     <!-- Budget Modal -->
     <q-dialog v-model="budgetModalOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ budgetModalCategory?.name }}
@@ -345,7 +345,7 @@
 
     <!-- Quick Entry Modal -->
     <q-dialog v-model="quickEntryModalOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ quickEntryCategory?.name }}
@@ -395,7 +395,7 @@
 
     <!-- Delete Confirmation Dialog -->
     <q-dialog v-model="deleteConfirmOpen" persistent>
-      <q-card style="border-radius: 28px; width: 100%; max-width: 420px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 420px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="row items-center q-gutter-sm">
             <q-avatar color="negative" text-color="white" icon="delete" size="36px" />
@@ -407,7 +407,7 @@
 
         <q-card-section class="q-pt-sm">
           <!-- Transaction summary -->
-          <div class="q-pa-sm q-mb-md" style="background: var(--card-cream); border-radius: 12px;">
+          <div class="q-pa-sm q-mb-md" style="background: var(--card-cream); border-radius: 8px;">
             <div class="row items-center q-gutter-sm">
               <q-avatar :style="{ background: getCategoryColor(deleteTxData?.category) + '20' }" size="36px">
                 <q-icon :name="getCategoryIcon(deleteTxData?.category)"
@@ -458,7 +458,7 @@
 
     <!-- Edit Transaction Dialog -->
     <q-dialog v-model="editDialogOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px;">
         <q-card-section class="row items-center justify-between">
           <div class="text-h6 text-weight-bold">{{ $t('allTransactions.editTransaction') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />
@@ -939,7 +939,7 @@ async function confirmDeleteOnly() {
 
 /* Balance Card */
 .balance-overview-card {
-  border-radius: 18px !important;
+  border-radius: 10px !important;
   border: none !important;
   box-shadow: 0 12px 30px -16px rgba(22, 22, 26, 0.6), 0 2px 0 rgba(22, 22, 26, 0.04) !important;
   overflow: hidden;
@@ -1041,7 +1041,7 @@ async function confirmDeleteOnly() {
 .account-card {
   min-width: 158px;
   flex-shrink: 0;
-  border-radius: 18px !important;
+  border-radius: 10px !important;
 }
 
 .account-card-inner {
@@ -1052,7 +1052,7 @@ async function confirmDeleteOnly() {
   font-size: 0.625rem;
   font-weight: 600;
   padding: 2px 6px;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -1083,7 +1083,7 @@ async function confirmDeleteOnly() {
 .loan-dash-card {
   flex: 1;
   min-width: 0;
-  border-radius: 16px !important;
+  border-radius: 10px !important;
 }
 
 .loan-card-inner {
@@ -1136,7 +1136,7 @@ async function confirmDeleteOnly() {
   position: relative;
   overflow: hidden;
   min-height: 108px;
-  border-radius: 16px !important;
+  border-radius: 10px !important;
 }
 
 .budget-fill-bg {
@@ -1145,7 +1145,7 @@ async function confirmDeleteOnly() {
   left: 0;
   right: 0;
   transition: height 0.5s ease;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 10px 10px;
   pointer-events: none;
 }
 
@@ -1156,7 +1156,7 @@ async function confirmDeleteOnly() {
 
 /* Transaction card */
 .tx-card {
-  border-radius: 18px !important;
+  border-radius: 10px !important;
   overflow: hidden;
 }
 

@@ -7,7 +7,7 @@
 
     <!-- Search Bar -->
     <q-input v-model="searchQuery" :placeholder="$t('search.placeholder')" outlined dense rounded class="q-mb-md"
-      bg-color="white" clearable style="border-radius: 16px;">
+      bg-color="white" clearable style="border-radius: 10px;">
       <template v-slot:prepend>
         <q-icon name="search" style="color: #7c7a73" />
       </template>

@@ -6,7 +6,7 @@
         <div class="page-subtitle">{{ $t('reports.subtitle') }}</div>
       </div>
 
-      <q-btn flat no-caps class="finance-card q-px-md text-weight-medium bg-white" style="border-radius: 12px">
+      <q-btn flat no-caps class="finance-card q-px-md text-weight-medium bg-white" style="border-radius: 8px">
         <div class="row items-center q-gutter-x-sm">
           <q-icon name="calendar_month" size="18px" style="color: #16161a" />
           <span style="color: #16161a">{{ displayMonth }}</span>

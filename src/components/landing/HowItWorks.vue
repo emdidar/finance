@@ -179,7 +179,7 @@ const steps = [
   &__step-icon {
     width: 72px;
     height: 72px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #ffffff;
     border: 1px solid #e9e5dc;
     display: flex;
@@ -237,7 +237,7 @@ const steps = [
     color: #fff;
     font-size: 1rem;
     font-weight: 700;
-    border-radius: 12px;
+    border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 4px 20px rgba(22, 22, 26, 0.25);
     transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;

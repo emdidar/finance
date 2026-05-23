@@ -20,7 +20,7 @@
 
     <!-- Month Picker Dialog -->
     <q-dialog v-model="monthPickerOpen" transition-show="scale" transition-hide="scale">
-      <q-card style="min-width: 300px; border-radius: 16px;">
+      <q-card style="min-width: 300px; border-radius: 10px;">
         <q-card-section class="row items-center justify-between q-pb-sm">
           <div class="text-subtitle1 text-weight-bold">{{ $t('allTransactions.selectMonth') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />
@@ -57,7 +57,7 @@
     </div>
 
     <!-- Transaction List -->
-    <q-card class="finance-card" style="border-radius: 16px; overflow: hidden;" v-if="filteredTransactions.length">
+    <q-card class="finance-card" style="border-radius: 10px; overflow: hidden;" v-if="filteredTransactions.length">
       <q-list separator>
         <q-slide-item v-for="tx in filteredTransactions" :key="tx.id" @left="({ reset }) => onEditTx(tx, reset)"
           @right="({ reset }) => onDeleteTx(tx, reset)">
@@ -113,7 +113,7 @@
 
     <!-- Delete Confirmation Dialog -->
     <q-dialog v-model="deleteConfirmOpen" persistent>
-      <q-card style="border-radius: 28px; width: 100%; max-width: 420px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 420px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="row items-center q-gutter-sm">
             <q-avatar color="negative" text-color="white" icon="delete" size="36px" />
@@ -125,7 +125,7 @@
 
         <q-card-section class="q-pt-sm">
           <!-- Transaction summary -->
-          <div class="q-pa-sm q-mb-md" style="background: var(--card-cream); border-radius: 12px;">
+          <div class="q-pa-sm q-mb-md" style="background: var(--card-cream); border-radius: 8px;">
             <div class="row items-center q-gutter-sm">
               <q-avatar :style="{ background: getCategoryColor(deleteTxData?.category) + '20' }" size="36px">
                 <q-icon :name="getCategoryIcon(deleteTxData?.category)"
@@ -176,7 +176,7 @@
 
     <!-- Edit Dialog -->
     <q-dialog v-model="editDialogOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px;">
         <q-card-section class="row items-center justify-between">
           <div class="text-h6 text-weight-bold">{{ $t('allTransactions.editTransaction') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />

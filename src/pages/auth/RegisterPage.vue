@@ -461,7 +461,7 @@ async function onRegister() {
 .brand-mockup-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 18px 20px;
 }
 
@@ -588,13 +588,13 @@ async function onRegister() {
   max-width: 420px;
   background: #ffffff;
   border: 1px solid #e9e5dc;
-  border-radius: 24px;
+  border-radius: 10px;
   padding: 40px 36px;
   box-shadow: 0 4px 24px rgba(22, 22, 26, 0.07), 0 1px 0 rgba(22, 22, 26, 0.03);
 
   @media (max-width: 599px) {
     padding: 32px 24px;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   &__header {
@@ -658,7 +658,7 @@ async function onRegister() {
   align-items: center;
   background: #fafaf7;
   border: 1px solid #e9e5dc;
-  border-radius: 12px;
+  border-radius: 8px;
   transition: border-color 0.2s, box-shadow 0.2s;
 
   &:focus-within {
@@ -798,7 +798,7 @@ async function onRegister() {
   font-size: 0.95rem;
   font-weight: 700;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 20px rgba(22, 22, 26, 0.3);

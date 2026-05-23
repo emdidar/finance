@@ -34,7 +34,7 @@
 
     <!-- Month Picker Dialog -->
     <q-dialog v-model="monthPickerOpen" transition-show="scale" transition-hide="scale">
-      <q-card style="min-width: 300px; border-radius: 16px;">
+      <q-card style="min-width: 300px; border-radius: 10px;">
         <q-card-section class="row items-center justify-between q-pb-sm">
           <div class="text-subtitle1 text-weight-bold">{{ $t('allTransactions.selectMonth') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />
@@ -71,7 +71,7 @@
     </div>
 
     <!-- Transaction List -->
-    <q-card class="finance-card" v-if="filteredTransactions.length" style="border-radius: 16px; overflow: hidden;">
+    <q-card class="finance-card" v-if="filteredTransactions.length" style="border-radius: 10px; overflow: hidden;">
       <q-list separator>
         <q-slide-item v-for="tx in filteredTransactions" :key="tx.id" @left="({ reset }) => onEditTx(tx, reset)"
           @right="({ reset }) => onDeleteTx(tx.id, reset)">
@@ -120,7 +120,7 @@
 
     <!-- Edit Dialog -->
     <q-dialog v-model="editDialogOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px;">
         <q-card-section class="row items-center justify-between">
           <div class="text-h6 text-weight-bold">{{ $t('allTransactions.editTransaction') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />

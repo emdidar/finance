@@ -7,7 +7,7 @@
         <div class="page-subtitle">{{ accountStore.accounts.length }}{{ $t('accounts.countSuffix') }}</div>
       </div>
       <q-btn round flat dense icon="add_circle" size="md"
-        style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 14px;" @click="openAddDialog" />
+        style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 8px;" @click="openAddDialog" />
     </div>
 
     <!-- Total Balance Banner -->
@@ -102,7 +102,7 @@
 
     <!-- Add/Edit Account Dialog -->
     <q-dialog v-model="showDialog">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ isEditing ? $t('accounts.editAccount') : $t('accounts.newAccount') }}

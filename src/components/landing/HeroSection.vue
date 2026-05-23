@@ -304,7 +304,7 @@ const scrollTo = (href) => {
     color: #fff;
     font-size: 1rem;
     font-weight: 700;
-    border-radius: 12px;
+    border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 4px 24px rgba(47, 125, 92, 0.4);
     transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
@@ -332,7 +332,7 @@ const scrollTo = (href) => {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
     transition: color 0.25s ease, background 0.25s ease;
     text-decoration: none;
@@ -437,7 +437,7 @@ const scrollTo = (href) => {
 
 // ---- Mockup ----
 .hero__mockup {
-  border-radius: 16px;
+  border-radius: 10px;
   overflow: hidden;
   background: #111110;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -517,7 +517,7 @@ const scrollTo = (href) => {
 
 .mockup-balance-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 16px;
   background: #16161a;
   border: 1px solid rgba(255, 255, 255, 0.08);

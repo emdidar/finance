@@ -17,7 +17,7 @@
           </div>
           <!-- Budget Info -->
           <div v-if="category.type === 'expense'" class="q-mt-sm cursor-pointer q-pa-sm"
-            style="background: rgba(255,255,255,0.08); border-radius: 12px;" @click="openBudgetModal" v-ripple>
+            style="background: rgba(255,255,255,0.08); border-radius: 8px;" @click="openBudgetModal" v-ripple>
             <div v-if="monthlyBudget">
               <div class="row justify-between items-center q-mb-xs">
                 <span class="text-caption" style="color: rgba(255,255,255,0.6)">{{ $t('categoryTransactions.budgetUsed')
@@ -65,7 +65,7 @@
 
     <!-- Month Picker Dialog -->
     <q-dialog v-model="monthPickerOpen" transition-show="scale" transition-hide="scale">
-      <q-card style="min-width: 300px; border-radius: 16px;">
+      <q-card style="min-width: 300px; border-radius: 10px;">
         <q-card-section class="row items-center justify-between q-pb-sm">
           <div class="text-subtitle1 text-weight-bold">{{ $t('allTransactions.selectMonth') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />
@@ -94,7 +94,7 @@
     </div>
 
     <!-- Transaction List -->
-    <q-card class="finance-card" v-if="filteredTransactions.length" style="border-radius: 16px; overflow: hidden;">
+    <q-card class="finance-card" v-if="filteredTransactions.length" style="border-radius: 10px; overflow: hidden;">
       <q-list separator>
         <q-slide-item v-for="tx in filteredTransactions" :key="tx.id" @left="({ reset }) => onEditTx(tx, reset)"
           @right="({ reset }) => onDeleteTx(tx.id, reset)">
@@ -139,7 +139,7 @@
 
     <!-- Budget Modal -->
     <q-dialog v-model="budgetModalOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">
             {{ category?.name }}
@@ -175,7 +175,7 @@
 
     <!-- Edit Dialog -->
     <q-dialog v-model="editDialogOpen">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px;">
         <q-card-section class="row items-center justify-between">
           <div class="text-h6 text-weight-bold">{{ $t('allTransactions.editTransaction') }}</div>
           <q-btn icon="close" flat round dense v-close-popup />

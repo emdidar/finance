@@ -6,7 +6,7 @@
         <div class="page-title">{{ $t('marketLists.title') }}</div>
         <div class="page-subtitle">{{ marketLists.lists.length }}{{ $t('marketLists.countSuffix') }}</div>
       </div>
-      <q-btn round flat dense icon="add_circle" size="md" style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 14px;" @click="openNewListDialog" />
+      <q-btn round flat dense icon="add_circle" size="md" style="color: #16161a; background: rgba(22,22,26,0.06); border-radius: 8px;" @click="openNewListDialog" />
     </div>
 
     <!-- Loading -->
@@ -18,7 +18,7 @@
     <template v-else>
       <div class="row q-col-gutter-md">
         <div v-for="list in marketLists.lists" :key="list.id" class="col-12 col-md-6">
-          <q-card class="finance-card full-height" style="border-radius: 16px; overflow: hidden;">
+          <q-card class="finance-card full-height" style="border-radius: 10px; overflow: hidden;">
 
             <!-- Card Header -->
             <div class="row items-center no-wrap q-px-md q-pt-md q-pb-sm cursor-pointer"
@@ -166,7 +166,7 @@
 
     <!-- New List Dialog -->
     <q-dialog v-model="showNewList">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.newMarketList') }}</div>
           <q-btn icon="close" flat round dense v-close-popup style="background: var(--card-cream); color: var(--text-muted);" />
@@ -184,7 +184,7 @@
 
     <!-- Copy List Dialog -->
     <q-dialog v-model="showCopyList">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.copyMarketListTitle') }}
           </div>
@@ -203,7 +203,7 @@
 
     <!-- Rename List Dialog -->
     <q-dialog v-model="showRenameList">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.renameListTitle') }}
           </div>
@@ -222,7 +222,7 @@
 
     <!-- Add Item Dialog -->
     <q-dialog v-model="showAddItem">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.addItem') }}</div>
           <q-btn icon="close" flat round dense v-close-popup style="background: var(--card-cream); color: var(--text-muted);" />
@@ -250,7 +250,7 @@
 
     <!-- Convert to Expense Dialog -->
     <q-dialog v-model="showConvertDialog" persistent>
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.convertToExpenseTitle')
             }}
@@ -333,7 +333,7 @@
 
     <!-- Delete List Confirmation Dialog -->
     <q-dialog v-model="deleteListModalOpen" persistent>
-      <q-card style="border-radius: 28px; width: 100%; max-width: 480px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 480px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="row items-center q-gutter-sm">
             <q-avatar color="negative" text-color="white" icon="delete_outline" size="36px" />
@@ -345,7 +345,7 @@
 
         <q-card-section class="q-pt-sm">
           <!-- List name summary -->
-          <div class="q-pa-sm q-mb-md row items-center q-gutter-sm" style="background: var(--card-cream); border-radius: 12px;">
+          <div class="q-pa-sm q-mb-md row items-center q-gutter-sm" style="background: var(--card-cream); border-radius: 8px;">
             <q-icon name="shopping_cart" color="dark" size="22px" />
             <div class="text-weight-bold">{{ deleteListTarget?.name }}</div>
             <q-space />
@@ -401,7 +401,7 @@
 
     <!-- Edit Item Dialog -->
     <q-dialog v-model="showEditItem">
-      <q-card style="border-radius: 28px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
+      <q-card style="border-radius: 10px; width: 100%; max-width: 500px; padding: 0 16px 24px; background: white;">
         <q-card-section class="row items-center justify-between no-wrap q-pb-none">
           <div class="text-h6 text-weight-bold q-pl-sm" style="color: var(--text-primary);">{{ $t('marketLists.editItemTitle') }}
           </div>
